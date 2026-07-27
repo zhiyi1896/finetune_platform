@@ -1,4 +1,4 @@
-# finetune_plat
+# finetune_platform
 
 一个面向本地开发的大模型 LoRA 微调、量化与部署平台原型。项目使用
 FastAPI 提供后端接口，使用 Gradio 提供可视化界面，并将数据处理、LoRA
@@ -34,7 +34,7 @@ FastAPI 提供后端接口，使用 Gradio 提供可视化界面，并将数据�
 ## 项目结构
 
 ```text
-finetune_plat/
+finetune_platform/
 ├── api/
 │   └── main.py                    # 平台 REST API
 ├── data/                          # 数据集与处理结果
@@ -89,8 +89,8 @@ LoRA 默认只训练少量增量权重。`PeftModel.from_pretrained()` 是在基
 推荐使用 uv：
 
 ```powershell
-git clone https://github.com/<username>/finetune_plat.git
-cd finetune_plat
+git clone git@github.com:zhiyi1896/finetune_platform.git
+cd finetune_platform
 uv sync
 ```
 
