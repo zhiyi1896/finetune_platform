@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log
+runs/
+wandb/
+
+# Model weights and generated model artifacts
+models/**
+!models/__init__.py
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+
+# Local experiment state and copied model versions
+storage/*.json
+storage/models/
+
+# Generated deployment packages
+deploy_package/
+/Dockerfile
+
+# Generated dataset splits
+data/*_train.json
+data/*_train.jsonl
+data/*_train.csv
+data/*_val.json
+data/*_val.jsonl
+data/*_val.csv
